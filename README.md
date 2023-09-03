@@ -30,23 +30,8 @@ With the primary function estimating rotation and translation, outliers can skew
 
 Inliers were recognized by:
 
-<div style="font-size: 1.5em;">
-( δ =
-\begin{bmatrix}
-1 & 0 & -u'_1 \\
-0 & 1 & -v'_1 \\
-\end{bmatrix}
-\begin{bmatrix}
-R \\
-\begin{bmatrix}
-u'_2 \\
-v'_2 \\
-1 \\
-\end{bmatrix}
-d'_2T \\
-\end{bmatrix}
-)
-</div>
+![image](https://github.com/Saibernard/Quadrotor-Stereo-Odometry-RANSAC-based-Pose-Estimation/assets/112599512/9047f262-7128-42b3-ad14-48123acd992b)
+
 
 ### Task 3: RANSAC Implementation
 The `ransac_pose` function executes the RANSAC algorithm on sensor data, iterating based on the parameter `ransac_iterations`. For the case when `ransac_iterations` is zero, all correspondences are deemed inliers. This function returns the vectors w and t, along with a boolean array signifying inliers for the final solution.
