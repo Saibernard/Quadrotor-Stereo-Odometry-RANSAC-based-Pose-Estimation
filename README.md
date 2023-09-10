@@ -36,6 +36,15 @@ Inliers were recognized by:
 ### Task 3: RANSAC Implementation
 The `ransac_pose` function executes the RANSAC algorithm on sensor data, iterating based on the parameter `ransac_iterations`. For the case when `ransac_iterations` is zero, all correspondences are deemed inliers. This function returns the vectors w and t, along with a boolean array signifying inliers for the final solution.
 
+![stereo pair 1](https://github.com/Saibernard/Quadrotor-Stereo-Odometry-RANSAC-based-Pose-Estimation/assets/112599512/6e6fd98c-5bab-40c6-b802-9ea0d0153c11)
+
+![stereo pair 2](https://github.com/Saibernard/Quadrotor-Stereo-Odometry-RANSAC-based-Pose-Estimation/assets/112599512/99bff780-e091-46bd-9aaa-a665e71dd092)
+
+![stereo pair unrectified](https://github.com/Saibernard/Quadrotor-Stereo-Odometry-RANSAC-based-Pose-Estimation/assets/112599512/ce719d76-beff-45e5-a37c-6af339e41a13)
+
+![temporal matches](https://github.com/Saibernard/Quadrotor-Stereo-Odometry-RANSAC-based-Pose-Estimation/assets/112599512/8fd68d04-e296-4c5e-ab58-673a4ea5dade)
+
+
 ## Conclusion
 This project exemplifies the application of RANSAC and least squares methodologies to stereo odometry for quadrotor pose estimation. By carefully implementing these techniques and testing with the EuRoc dataset, a robust and reliable pose estimation method was achieved.
 
